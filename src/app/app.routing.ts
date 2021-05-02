@@ -8,6 +8,9 @@ import { Routes, RouterModule } from '@angular/router';
 import { AdminLayoutComponent } from './layouts/admin-layout/admin-layout.component';
 import { ExpandOperator } from 'rxjs/internal/operators/expand';
 import { from } from 'rxjs';
+import { LoginComponent } from './login/login.component';
+import { RegisterComponent } from './register/register.component';
+
 
 const routes: Routes =[
   {
@@ -26,7 +29,17 @@ const routes: Routes =[
   {
     path: '**',
     redirectTo: 'dashboard'
-  }
+  },
+
+  { path: 'login',      
+    component: LoginComponent},
+
+    { path: 'Register',      
+    component: RegisterComponent},
+
+
+  
+
 
 ];
 
